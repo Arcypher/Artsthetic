@@ -2,6 +2,12 @@
 Artsthetic is a website hosts many users' artworks.
 These can range from beautiful illustrations to realistic 3D models, to name a few.
 
+# Rules
+There should only be a README.md in the master branch. There are
+folders to handle versions the development cycle for the website.
+Each time an update is pushed, make sure it goes to the right
+branch.
+
 ## Stack of Development:
 ================================================
 * Front-end: HTML5, CSS3, Vanilla JS
