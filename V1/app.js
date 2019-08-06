@@ -3,6 +3,7 @@ var app = express();
 
 app.use(express.static("styles")); //css files storage
 app.use(express.static("scripts")); //scripts files storage (important for MVC)
+app.use(express.static("images")); //images
 app.set("view engine", "ejs");
 
 //root page
