@@ -4,34 +4,74 @@
 body {
     background-color: rgba(187, 217, 219, 0.5);
     background-size: cover;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin: 0;
+}
+
+/*From W3Schools*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    font-family: 'Livvic', sans-serif;
+}
+
+li {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: #111;
 }
 
 /* classes */
 .container, .title {
     display: grid;
     justify-content: center;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .container {
-    grid-gap: 50px;  
-    grid-template-columns: repeat(3, minmax(100px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));  
+    grid-gap: 30px;  
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));  
 }
 
 .container > div > img {
+    margin-left: auto;
+    margin-right: auto;
     display: block;
     border: 2px solid black;
-    width: 100%;
-    height: 100%;  
+    width: 75%;
+    height: 75%;  
     object-fit: cover;
+    transition: all .2s ease-in-out;
+}
+
+.container > div > img:hover {
+    transform: scale(1.1);
 }
 
 .title {
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .TM {
     text-align: center;
+}
+
+.account:last-child {
+    float: right;
 }
